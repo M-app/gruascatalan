@@ -1,0 +1,45 @@
+.barra{
+    background-color: white;
+    height: 8px;
+    width: 100%;
+}
+#titulo-header{
+    font-weight: 700;
+    color: white;
+}
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.seccion-header{
+    background-color: #F52D2D;
+}
+.lista-header li{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.promo-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.mover-item-promo-header{
+    text-align: left;
+}
+@media (max-width: 767px) {
+   .mover-item-promo-header{
+    text-align: center;
+    }
+    #img-promo{
+    margin-bottom: 20px;
+}
+}
+@media (max-width: 480px){
+   .mover-item-promo-header{
+    text-align: center;
+    }
+    #img-promo{
+    margin-bottom: 20px;
+}
+}

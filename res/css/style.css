@@ -1,0 +1,38 @@
+.seccion-contacto{
+    font-family: 'Roboto', sans-serif;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.seccion-contacto p{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.seccion-footer{
+    background-color: #F8F8F8;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.seccion-footer a{
+    color: black;
+    font-size: 18px;
+}
+.seccion-footer a img{
+    margin-right: 8px;
+}
+.seccion-footer ul{
+    list-style-type: none;
+}
+.footer ul li{
+    margin-bottom: 4px;
+}
+@media (max-width: 767px) {
+    .seccion-contacto div div div{
+    margin-top: 16px;
+}
+}
+@media (max-width: 480px){
+   .seccion-contacto div div div{
+    margin-top: 12px;
+    }
+}
