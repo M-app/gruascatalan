@@ -24,10 +24,24 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 class MainPage(webapp2.RequestHandler):
     def get(self):
         self.response.headers['Content-Type'] = 'text/html'
+        template = JINJA_ENVIRONMENT.get_template('/templates/index.html')
+        self.response.write(template.render())
+
+class Puerto(webapp2.RequestHandler):
+    def get(self):
+        self.response.headers['Content-Type'] = 'text/html'
         template = JINJA_ENVIRONMENT.get_template('/templates/puerto.html')
+        self.response.write(template.render())
+
+class AvisoLegal(webapp2.RequestHandler):
+    def get(self):
+        self.response.headers['Content-Type'] = 'text/html'
+        template = JINJA_ENVIRONMENT.get_template('/templates/avisolegal.html')
         self.response.write(template.render())
 
 
 app = webapp2.WSGIApplication([
     ('/', MainPage),
-], debug=True)
+    ('/puerto',Puerto),
+    ('/avisolegal',AvisoLegal)
+], debug=False)

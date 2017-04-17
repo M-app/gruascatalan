@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Gruas Catalan - servicio de gruas las 24 horas</title>
+        <link rel="stylesheet" href="../resprimera/css/bootstrap.min.css"  type="text/css" media="all">
+        <link rel="stylesheet" href="../resprimera/css/style.css"  type="text/css" media="all">
+        <meta name="viewport" content="initial-scale=1.0"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    </head>
+    <body>
+        
+    <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyCGDEg_AgfvddrBdKJG-f9dgtAKS2MHRtg",
+        authDomain: "gcat-52cfb.firebaseapp.com",
+        databaseURL: "https://gcat-52cfb.firebaseio.com",
+        storageBucket: "gcat-52cfb.appspot.com",
+        messagingSenderId: "88815787457"
+    };
+    firebase.initializeApp(config);
+    </script>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-3 logo">
+                        <img src="../resprimera/images/logo.png" alt="logo-gruas-catalan" class="img-responsive center-block" width="190px">
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-3">
+                        <ul class="list-inline center-block text-center">
+                            <li>
+                                <img src="../resprimera/iconos/whatsapp.png" alt="whatsapp-gruas-catalan" class="img-responsive" width="40px">
+                            </li>
+                            <li>
+                                <h5>Llámanos</h5>
+                                <h5>5404-0436</h5>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-3 ">
+                        <ul class="list-inline center-block text-center">
+                            <li>
+                                <img src="../resprimera/iconos/clock-circular-outline.png" alt="clock-gruas-catalan" class="img-responsive" width="40px">
+                            </li>
+                            <li>
+                                <h5>Estamos atendiendo</h5>
+                                <h5>24 horas</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           <section> <!-- sección menu -->
+              <nav class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#garantias">Garantias</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+                </nav>
+           </section>
+            <section> <!-- Sección de slide de imágenes-->
+                 <div class="container-fluid">
+                     <div class="row">
+                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>
+
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="../resprimera/images/gruas1.png" alt="rescates-gruas-catalan" class="img-responsive center-block">
+                                    <div class="carousel-caption">
+                                        <h3>Maniobras de Rescate</h3>
+                                        <p>Una solución para vehículos accidentados</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="../resprimera/images/gruas2.png" alt="experiencia-gruas-catalan" class="img-responsive center-block">
+                                    <div class="carousel-caption">
+                                        <h3>Años de experiencia</h3>
+                                        <p>Una buena trayectoria prestando un servicio de calidad</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="../resprimera/images/gruas3.png" alt="equipo-gruas-catalan" class="img-responsive center-block">
+                                    <div class="carousel-caption">
+                                        <h3>Equipo completo</h3>
+                                        <p>Preparados para las diferentes situaciones en todo momento</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            </div>
+                     </div>
+                 </div>
+            </section> <!-- Fin slide imagenes -->
+        </header>
+        
+        <!-- Sección de Servicios -->
+        <section class="seccion-servicios" id="servicios">
+            <div class="container">
+                <div class="row margin-item">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <ul class="list-inline img-responsive center-block">
+                            <li><img src="../resprimera/iconos/gancho.png" alt="gancho-grua"></li>
+                            <li><h2>Nuestros</h2></li>
+                            <li><h2 id="letras-servicios">Servicios</h2></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 item-servicios">
+                        <div class="item-contenido-servicios">
+                            <img src="../resprimera/iconos/grua_plataforma_servicios.png" class="img-responsive" width="48px" height="48px" alt="servicios-gruas-catalan">
+                            <div id="cuadrado"></div>
+                            <h3 class="text-left">Grúas de Plataforma</h3>
+                            <p class="text-left">Remolque y <strong>transporte de todo tipo de vehículos.</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 item-servicios">
+                        <div class="item-contenido-servicios">
+                            <img src="../resprimera/iconos/contenedores_servicios.png" class="img-responsive" width="48px" height="48px" alt="servicios-gruas-catalan">
+                            <div id="cuadrado"></div>
+                            <h3 class="text-left">Contenedores</h3>
+                            <p class="text-left"><strong>Levantamos y transportamos contenedores cargados.</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 item-servicios">
+                        <div class="item-contenido-servicios">
+                            <img src="../resprimera/iconos/transporte_servicios.png" class="img-responsive" width="48px" height="48px" alt="servicios-gruas-catalan">
+                            <div id="cuadrado"></div>
+                            <h3 class="text-left">Servicio de transporte</h3>
+                            <p class="text-left"><strong>Transporte de vehículos livianos y pesados, transporte de maquinaria.</strong></p>
+                        </div>
+                    </div>                    
+                    <div class="col-xs-12 col-sm-6 col-md-4 item-servicios">
+                        <div class="item-contenido-servicios">
+                            <img src="../resprimera/iconos/carretera_servicios.png" class="img-responsive" width="48px" height="48px" alt="servicios-gruas-catalan">
+                            <div id="cuadrado"></div>
+                            <h3 class="text-left">Servicios en Carretera</h3>
+                            <p class="text-left">Abastecimiento de combustible,<strong> paso de corriente</strong>, cambio de llanatas lo combrimos.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 item-servicios">
+                        <div class="item-contenido-servicios">
+                            <img src="../resprimera/iconos/rescate_servicios.png" class="img-responsive" width="48px" height="48px" alt="servicios-gruas-catalan">
+                            <div id="cuadrado"></div>
+                            <h3 class="text-left">Rescates</h3>
+                            <p class="text-left">Vehículo<strong> volcado</strong>, vehículo atascado, en barranco lo recuperamos.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4 item-servicios">
+                       <div class="item-contenido-servicios">
+                            <img src="../resprimera/iconos/cerrajeria_servicios.png" class="img-responsive" width="48px" height="48px" alt="servicios-gruas-catalan">
+                            <div id="cuadrado"></div>
+                            <h3 class="text-left">Cerrajería</h3>
+                            <p class="text-left"><strong>Apertura de vehículos</strong> de todo tipo.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section> <!-- Fin Servicios-->
+
+        <section id="garantias">
+            <!-- Sección de Garantias -->
+            <div class="container">
+                <div class="row margin-row margin-item">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <ul class="list-inline img-responsive center-block">
+                            <li><img src="../resprimera/iconos/candado.png" alt="gancho-grua"></li>
+                            <li><h2>Nuestras</h2></li>
+                            <li><h2 id="letras-servicios">Garantias</h2></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 seccion-garantias-principal">
+                        <img src="../resprimera/images/about2.jpg" class="img-responsive center-block"/>
+                        <h2>Experiencia</h2><br>
+                        <p>Grúas Catalan es una empresa seria
+                            comprometida con los guatemaltecos a dar 
+                            un servicio de primera calidad, estamos orgullosos de 
+                            nuestra trayectoria y queremos seguir así.
+                        </p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="col-xs-12 col-sm-12 col-md-12 seccion-garantias-secundaria">
+                            <ul class="list-inline">
+                                <li><img src="../resprimera/iconos/reloj_garantias.png" class="img-responsive center-block" alt="garantias-gruas-catalan" width="32px" height="32px"></li>
+                                <li><h3 class="text-center">Servicio las 24 horas</h3></li>
+                            </ul>
+                            <p>Funcionamos a cualquier hora.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 seccion-garantias-secundaria">
+                            <ul class="list-inline">
+                                <li><img src="../resprimera/iconos/calendario_garantias.png" class="img-responsive center-block" alt="garantias-gruas-catalan" width="32px" height="32px"></li>
+                                <li><h3 class="text-center">7 Días a la semana</h3></li>
+                            </ul>
+                            <p>Los 365 días del año.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-12 seccion-garantias-secundaria">
+                            <ul class="list-inline">
+                                <li><img src="../resprimera/iconos/ahorro_garantias.png" class="img-responsive center-block" alt="garantias-gruas-catalan" width="32px" height="32px"></li>
+                                <li><h3 class="text-center">Un buen precio</h3></li>
+                            </ul>
+                            <p>Nuestro procesos optimizados reducen costos.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div> <!-- fin de garantias -->
+        </section>
+        <footer> <!-- inicio del footer -->
+            <div class="container" id="contacto">
+                <div class="row margin-row">
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <img src="../resprimera/images/logo.png" alt="logo-gruas-catalan" width="190px" class="img-responsive">
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6">
+                        <h3 class="footer-texto">Contacto</h3>
+                        <ul class="list-inline ">
+                            <li><a href="/puerto"><p class="footer-texto footer-texto">Contacto en el Puerto</p></a></li>
+                        </ul>
+                        <ul class="list-inline ">
+                            <li><i class="fa fa-phone-square footer-texto" aria-hidden="true"></i></li>
+                            <li><p class="footer-texto footer-texto">5404-3213 Movistar</p></li>
+                        </ul>
+                        <ul class="list-inline ">
+                            <li><i class="fa fa-phone-square footer-texto" aria-hidden="true"></i></li>
+                            <li><p class="footer-texto footer-texto">5404-3213 Movistar</p></li>
+                        </ul>
+                        <ul class="list-inline ">
+                            <li><i class="fa fa-phone-square footer-texto" aria-hidden="true"></i></li>
+                            <li><p class="footer-texto footer-texto">4186-0395 Claro</p></li>
+                        </ul>
+                        <ul class="list-inline ">
+                            <li><i class="fa fa-phone-square footer-texto" aria-hidden="true"></i></li>
+                            <li><p class="footer-texto footer-texto">5331-2127 Tigo</p></li>
+                        </ul>
+                        <ul class="list-inline">
+                            <li><i class="fa fa-map-marker footer-texto" aria-hidden="true"></i></li>
+                            <li><p class="footer-texto">kilómetro 60 av. Centro América Escuintla</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer> <!-- find del footer -->
+        <div class="seccion-abajo-footer col-xs-12 col-sm-12 col-md-12"><!-- seccion abajo footer -->
+            <ul class="list-inline text-center">
+                <li><p>Derechos Reservados 2016.</p></li>
+                <li><a href="http://www.flaticon.com/">Fuente íconos</a></li>
+            </ul>  
+        </div><!-- fin sección abajo footer-->
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAFtY2q5mxU2H-2JsjU-F6vlwvQSZqOWgo",
+        authDomain: "webprueba-a9ef2.firebaseapp.com",
+        databaseURL: "https://webprueba-a9ef2.firebaseio.com",
+        storageBucket: "",
+        messagingSenderId: "13968341134"
+    };
+    firebase.initializeApp(config);
+    </script>
+    </body>
+    <script src="../resprimera/js/jquery-3.1.1.min.js"></script>
+    <script src="../resprimera/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/06253d4911.js"></script>
+</html>
